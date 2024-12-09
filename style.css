@@ -1,0 +1,407 @@
+/* Mobilefirst inicio em width de 501px que seria o Dispositivo Móvel P deitado*/
+/*centraliza o body e aplica um fundo ao body*/
+
+body{
+    display: flex;
+    align-items: center;
+    max-width: 980px; 
+    height: 100vh;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: url("puzzle.jpg"); 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-content: center;
+    font-size: 62.5%;
+    
+} 
+.btnSection{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    height: 100%;
+    background-image: url("bg-rounded.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 45%;
+    width: 100%;
+    max-width: 500px;
+}
+
+.btnSection button{
+    margin-bottom: 10px;
+    padding: 15px 24px;
+    font-size: 15px;
+}
+.menuTitle{
+    font-size: 20px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif; 
+    background-image: url("fundo-base.jpg");
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: #d9d3d3b5;
+    -webkit-text-stroke: 1px #1a0c00;
+}
+.menuSubTitle{
+    font-size: 16px;
+    font-weight: bold;
+    margin: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url("fundo-base.jpg");
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: #d9d3d3b5;
+    -webkit-text-stroke: 1px #ffffff00;
+}
+/*botões do jogo*/
+button{
+      padding: 5px;
+      background-image: url("fundo-base.jpg");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      box-shadow: 3px 3px #22212177;
+      border: 0.8px solid #00000071;
+      border-radius: 10px;
+      font-size: 1em;
+      font-family: Arial, Helvetica, sans-serif;
+      font-weight: bold;
+      -webkit-text-stroke: 0.8px #1a0c00;
+      box-sizing: border-box
+}
+button:hover{
+     
+    border: 0.8px solid #f3eeee71;
+    transition: all .4s ease;
+}
+
+button:focus{
+    border: 2px solid #817f7f71;
+    transition: all .4s ease;
+}
+
+
+.jogo{
+  
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 0 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+.torre{
+    width: 15px;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    flex-direction: column-reverse;
+    background-image: url("fundo-base.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px 10px 0 0 ;
+    box-shadow: 5px 5px #22212177;
+    border: 0.8px solid #00000071;
+}
+
+.discoLaranja{
+    width: 70px;
+    background-image: linear-gradient(to right, #ff870c2e , #c542024f), url("fundo-base.jpg");
+    background-size: contain;
+    height: 25px;
+    border-radius: 5px;
+    box-shadow: 5px 0 #22212177;
+    margin-left: -3px;
+}
+.discoVerde{
+    width: 50px;
+    background-image: linear-gradient(to right,#0d420347, #0d420352), url("fundo-base.jpg");
+    background-size: contain;
+    height: 25px;
+    border-radius: 5px;
+    box-shadow: 5px 0 #22212177;
+    margin-left: -3px;
+}
+.discoRoxo {
+    width: 40px;
+    background-image: linear-gradient(to right, #7412744f, #5c005c40), url("fundo-base.jpg");
+    background-size: contain;
+    height: 25px;
+    border-radius: 5px;
+    box-shadow: 5px 0 #22212177;
+    margin-left: -3px;
+
+}
+.discoAzul {
+    width: 80px;
+    background-image: linear-gradient(to right, #0339ad77, #0339ad6e), url("fundo-base.jpg");
+    background-size: contain;
+    height: 25px ;
+    border-radius: 5px;
+    box-shadow: 5px 0 #22212177;
+    margin-left: -3px;
+}
+.discoIndefinido {
+    width: 100px;
+    background-image: linear-gradient(to right, #00000065, #00000083), url("fundo-base.jpg");
+    background-size: contain;
+    height: 25px ;
+    border-radius: 5px;
+    box-shadow: 5px 0 #22212177;
+    margin-left: -3px;
+}
+
+
+.instruçao{
+    text-align: center;
+    color: #4e2a1b;
+    font-weight: bold;
+    background-color: #d7d7d75c;
+    -webkit-text-stroke: 0.8px #000000;
+    padding: 5px 25px;
+    font-size: 1em;
+    border-radius: 5px;
+    border: 1px solid #0000008c;
+}
+.instruçao:hover{
+    -webkit-text-stroke: 0.2px #ac7704b7;
+}
+.contador{
+    text-align: center;
+    color: #4e2a1b;
+    font-weight: bold;
+    background-color: #d7d7d75c;
+    -webkit-text-stroke: 0.8px #000000;
+    padding: 5px 25px;
+    font-size: 1em;
+    border-radius: 5px;
+    border: 1px solid #0000008c;
+}
+.contador:hover{
+    -webkit-text-stroke: 0.2px #ac7704b7;
+}
+.secaoBaseVisor{
+    width: 481px;
+    height: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+
+.baseTorre{
+    width: 100%;
+    max-width: 980px;
+    height: 50px;
+    margin-top: -1px;
+    border-radius: 8px;
+    background-image: url("fundo-base.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 5px 5px #22212177;
+    border: 0.8px solid #00000071;
+    
+}
+.baseTexto{
+    font-size: 18px;
+    background-image: url("fundo-base.jpg");
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    -webkit-text-stroke: 0.8px #1a0c00;
+    
+}
+.baseTexto:hover{
+    -webkit-text-stroke: 0.2px #da9709b7;
+}
+.boxVisorTorres{
+    width: 100%;
+    /* height: 25px; */
+    max-width: 980px;
+    margin-top: -6px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-image: url("fundo-base.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 8px;
+    box-shadow: 5px 5px #22212177;
+    border: 0.8px solid #00000071;
+}
+
+.bloco-vitoria{
+    background-color: rgb(0, 0, 0, 0.7);
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    display: flex;
+    position: absolute;
+    padding: 15px;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.msg-vitoria{
+display: flex;
+flex-direction: row;
+align-items: center;
+width: 67%;
+overflow: auto;
+height: 100%;
+flex-wrap: wrap;
+justify-content: center;
+}
+
+.msg-vitoria span{
+height: 50px;
+background-image: url("fundo-base.jpg");
+background-position: center;
+background-size: cover;
+box-shadow: 3px 3px #22212177;
+border: 0.8px solid #00000071;
+border-radius: 15px;
+font-size: 20px;
+font-family: Arial, Helvetica, sans-serif;
+font-weight: bold;
+-webkit-text-stroke: 0.8px #1a0c00;
+width: 70%;
+text-align: center;
+padding-top: 25px;
+}
+
+.msg-vitoria button{
+height: 50px;
+background-image: url("fundo-base.jpg");
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+margin-left: 25px;
+padding: 10px;
+box-shadow: 3px 3px #22212177;
+border: 0.8px solid #00000071;
+border-radius: 15px;
+font-size: 20px;
+font-family: Arial, Helvetica, sans-serif;
+font-weight: bold;
+-webkit-text-stroke: 0.8px #1a0c00;
+width: 40%;
+font-size: 16px;
+}
+
+@media (min-width: 552px) {
+    .secaoBaseVisor{
+        width: 520px
+    }
+}
+
+@media (min-width: 591px) {
+    .secaoBaseVisor{
+        width: 575px
+    }
+}
+
+@media (min-width: 646px) {
+    .secaoBaseVisor{
+        width: 630px
+    }
+}
+
+@media (min-width: 701px) {
+    .secaoBaseVisor{
+        width: 680px
+    }
+}
+
+@media (min-width: 751px) {
+    .secaoBaseVisor{
+        width: 729px
+    }
+}
+
+@media (min-width: 800px){
+    .torre{
+        width: 20px;
+        height: 300px;
+    }
+
+    .discoLaranja{
+        width: 150px;
+        height: 50px;
+    }
+    .discoVerde{
+        width: 100px;
+        height: 50px;
+    }
+    .discoRoxo{
+        width: 60px;
+        height: 50px;
+
+    }
+    .discoAzul{
+        width: 180px;
+        height: 50px ;
+    }
+    .discoIndefinido{
+        width: 210px;
+        height: 50px ;
+    } 
+    .secaoBaseVisor{
+        width: 97vw;
+        height: 100px;
+    }
+    
+
+    .baseTexto{
+        font-size: 25px;
+    }
+    
+    .msg-vitoria button{
+        font-size: 17px;
+    }
+
+    .btnSection button{
+        padding:15px 24px ;
+        font-size: 15px;
+    }
+
+    button{
+        padding: 10px;
+        font-size: 15px;
+    }
+    .instruçao{
+        padding: 10px;
+        font-size: 15px;
+    }
+    .contador{
+        padding: 10px;
+        font-size: 15px;
+    }
+}
+
+@media (min-width: 1000px) {
+    .secaoBaseVisor{
+        width: 980px
+    }
+    .msg-vitoria button{
+        font-size: 21px;
+    }
+}
+
+
+.esconde{
+    display: none;
+}
